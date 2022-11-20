@@ -1,0 +1,7 @@
+#Mon Nov 21 06:01:05 CST 2022
+base.1=D\:\\android\\NotePad-master\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
+path.1=7/classes.dex
+base.0=D\:\\android\\NotePad-master\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=0/classes.dex

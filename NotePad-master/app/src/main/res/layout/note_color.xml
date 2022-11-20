@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/color_white"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:onClick="white"
+        tools:ignore="Suspicious0dp" />
+    <ImageButton
+        android:id="@+id/color_yellow"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="#fdef90"
+        android:onClick="yellow"
+        tools:ignore="Suspicious0dp" />
+    <ImageButton
+        android:id="@+id/color_blue"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="#6dc1ed"
+        android:onClick="blue"
+        tools:ignore="Suspicious0dp" />
+    <ImageButton
+        android:id="@+id/color_green"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="#94e49f"
+        android:onClick="green"
+        tools:ignore="Suspicious0dp" />
+    <ImageButton
+        android:id="@+id/color_red"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="#f19696"
+        android:onClick="red"
+        tools:ignore="Suspicious0dp" />
+
+
+</LinearLayout>
