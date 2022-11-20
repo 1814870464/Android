@@ -26,7 +26,7 @@ int[] viewIDs = { android.R.id.text1, R.id.text2 }//加入修改时间;
 
 - #### 实验结果如下图：
 
-- - ![avatar]()
+- - ![avatar](https://github.com/1814870464/Android/blob/main/images/sck_1.png)
 
 ### 2.NoteList界面添加笔记查询功能
 
@@ -65,7 +65,7 @@ int[] viewIDs = { android.R.id.text1, R.id.text2 }//加入修改时间;
 ```
 
 - #### 实验结果如下图：
-- - ![avatar]()
+- - ![avatar](https://github.com/1814870464/Android/blob/main/images/sck_2.png)
  
  
  
@@ -91,7 +91,7 @@ int[] viewIDs = { android.R.id.text1, R.id.text2 }//加入修改时间;
         public static final int RED_COLOR = 4; //red
 ```
  - #### 实验结果如下图：
-- - ![avatar]()
+- - ![avatar](https://github.com/1814870464/Android/blob/main/images/sck_3.png)
  
  
  
