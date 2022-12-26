@@ -26,7 +26,7 @@ int[] viewIDs = { android.R.id.text1, R.id.text2 }//加入修改时间;
 
 - #### 实验结果如下图：
 
-- - ![avatar]()
+- - ![avatar](https://github.com/1814870464/Android/blob/main/images/sck_1.png)
 
 ### 2.NoteList界面添加笔记查询功能
 
@@ -65,11 +65,13 @@ int[] viewIDs = { android.R.id.text1, R.id.text2 }//加入修改时间;
 ```
 
 - #### 实验结果如下图：
-- - ![avatar]()
+- - ![avatar](https://github.com/1814870464/Android/blob/main/images/sck_2.png)
  
  
  
  ### 3.NoteList  UI美化
+ 
+ - #### 思路
  
  （1）给NotesList换个主题，在数据库中增加一个字段“color”用于存放每条笔记的背景颜色
  
@@ -91,10 +93,46 @@ int[] viewIDs = { android.R.id.text1, R.id.text2 }//加入修改时间;
         public static final int RED_COLOR = 4; //red
 ```
  - #### 实验结果如下图：
-- - ![avatar]()
+- - ![avatar](https://github.com/1814870464/Android/blob/main/images/sck_3.png)
  
+  ### 4.NoteList  更换背景颜色
  
- 
- 
- 
- 
+ - #### 思路
+
+（1）在NoteEditor.java中增加color属性，并在onResume()中增加设置背景颜色的代码
+
+（2）在editor_options_menu.xml中添加一个更改背景的按钮
+
+（3）NoteEditor.java中onOptionsItemSelected()的switch中添加代码
+
+（4）新建选择背景颜色的布局note_color.xml和选择颜色的NoteColor.java并注册
+
+  - #### 部分实验代码：
+（2）
+ ```
+  //读取颜色数据
+if(mCursor!=null){
+    mCursor.moveToFirst();
+    int x = mCursor.getColumnIndex(NotePad.Notes.COLUMN_NAME_BACK_COLOR);
+    int y = mCursor.getInt(x);
+    Log.i("NoteEditor", "color"+y);
+    switch (y){
+        case NotePad.Notes.DEFAULT_COLOR:
+            mText.setBackgroundColor(Color.rgb(255, 255, 255));
+            break;
+        case NotePad.Notes.YELLOW_COLOR:
+            mText.setBackgroundColor(Color.rgb(247, 216, 133));
+            break;
+        default:
+            mText.setBackgroundColor(Color.rgb(255, 255, 255));
+            break;
+    }
+}
+   ```
+（3）
+   ```
+   <item android:id="@+id/menu_color"
+android:title="color"
+android:icon="@drawable/ic_menu_edit"
+android:showAsAction="always"/>
+```
